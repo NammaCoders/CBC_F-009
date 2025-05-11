@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: var(--font-segoe-ui);
+}
+nav {
+    background-color: #ffffff;
+    color: rgb(26, 161, 146);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 60px; /* Decreased height */
+    line-height: 30px; /* Align items vertically */
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(25, 156, 140);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: rgb(26, 161, 146);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.logo-image {
+    width: 32px;
+    height: 32px;
+    
+    background-size:cover;
+}
+
+.book-your-test-now {
+  background: linear-gradient(245.76deg, #b2ebf2, #e0f7fa);
+  min-height: 100vh;
+  padding: 80px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  color: var(--color-lightseagreen);
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  border-radius: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.form-group input {
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: var(--color-gainsboro);
+}
+
+.submit-button {
+  background: linear-gradient(#08979d);
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 45px;
+  margin-left: 80px;
+  width: 70%;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+.form-image {
+  width: 35%;
+  object-fit: contain;
+}
+
+

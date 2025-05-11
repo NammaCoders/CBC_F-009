@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products - DiabEase</title>
+    <link rel="stylesheet" href="/static/global.css" />
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap" />
+    <style>
+        nav {
+            background-color: #ffffff;
+            color: rgb(26, 161, 146);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            align-items: center;
+            margin: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .nav-highlight {
+        background: #044243;
+        color: #1aa192 !important;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        }
+
+        .nav-highlight:hover {
+        background: #021313;
+        transform: scale(1.05);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(25, 156, 140);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: rgb(26, 161, 146);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .privacy-assurance2 {
+        background-color: #e6f5ec;
+        color: rgb(26, 161, 146);
+        padding: 1rem;
+        border-left: 5px solid linear-gradient(45deg, #e0f7fa, #b2ebf2);;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 20px;
+
+        }
+
+        .appointment-highlight{
+            background: #055b5c;
+            color: #ffffff !important;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .appointment-highlight:hover {
+            background: #021313;
+            transform: scale(1.05);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Logo" class="logo-image">
+                DiabEase
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/book_your_appointment" class="appointment-highlight">Book Your Test</a></li>
+                <li><a href="/consult_doctor" class="nav-highlight">Consult Doctor</a></li>
+                <li><a href="/sign_in">Sign In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="products">
+        <b class="blood-glucose-monitor">Blood Glucose Monitor</b>
+        <b class="hygiene-essentials">Hygiene Essentials</b>
+        <div class="products-child"></div>
+        <div class="products-item"></div>
+        <div class="frame-parent" id="frameContainer">
+            <img class="instance-child" alt="" src="/static/images/1st.jpg">
+            <div class="accu-chek">Accu-Chek</div>
+            <div class="div">₹675.00</div>
+            <div class="div1">(5,253)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">4.1</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+        <div class="image-parent" id="frameContainer1">
+            <img class="instance-child" alt="" src="/static/images/2nd.jpg">
+            <div class="accu-chek">Dr Trust USA</div>
+            <div class="div">₹1,784.82</div>
+            <div class="div1">(4,321)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">4.0</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+        <div class="image-group" id="frameContainer2">
+            <img class="instance-child" alt="" src="/static/images/3rd.jpg">
+            <div class="accu-chek">GlucoOne</div>
+            <div class="div">₹694.00</div>
+            <div class="div1">(6,728)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">3.8</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+        <div class="j0m0nus-sx679-parent" id="frameContainer3">
+            <img class="instance-child" alt="" src="/static/images/4th.jpg">
+            <div class="accu-chek">Savlon Sanitizer</div>
+            <div class="div">₹211.86</div>
+            <div class="div1">(5,833)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">4.4</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+        <div class="image-container" id="frameContainer4">
+            <img class="instance-child" alt="" src="/static/images/5th.jpg">
+            <div class="accu-chek">ASGARD Mask</div>
+            <div class="div">₹1,784.82</div>
+            <div class="div1">(2,085)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">4.3</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+        <div class="image-parent1" id="frameContainer5">
+            <img class="instance-child" alt="" src="/static/images/6th.jpg">
+            <div class="accu-chek">Stayfree Dry Max</div>
+            <div class="div">₹467.00</div>
+            <div class="div1">(16,768)</div>
+            <img class="majesticonsarrow-up-line" alt="" src="/static/images/arr.jpg">
+            <div class="parent">
+                <div class="div2">3.8</div>
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="notostar-icon" alt="" src="/static/noto_star.svg">
+                <img class="heroiconsstar" alt="" src="/static/heroicons_star.svg">
+            </div>
+        </div>
+    </div>
+    <div class="privacy-assurance2">
+        <p><strong>Privacy Assurance:</strong> All personal and health data entered is kept private, secure, and is
+            never shared with third parties.</p>
+        <p><strong>Disclaimer:</strong> This tool, including any chatbot responses, is not a substitute for
+            professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for
+            serious health concerns.</p>
+    </div>
+    <script>
+        var frameContainer = document.getElementById("frameContainer");
+        if (frameContainer) {
+            frameContainer.addEventListener("click", function () {
+                window.open("https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo2OTAwNTU1MDM0MjcwNjc2OjE3NDY4NzM5NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDIzMTkyNzAwMjAyOjoyOjo&url=%2FAccu-Chek-Instant-Glucose-Monitoring-System%2Fdp%2FB07B6LYFV4%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fadgrpid%3D1312818489033728%26content-id%3Damzn1.sym.cd33fa60-47cd-49f3-80b8-24b1f0cbef97%253Aamzn1.sym.cd33fa60-47cd-49f3-80b8-24b1f0cbef97%26cv_ct_cx%3Dsugar%2Bblood%2Btesting%2Bmachine%26hvadid%3D82051421943998%26hvbmt%3Dbe%26hvdev%3Dc%26hvlocphy%3D155020%26hvnetw%3Do%26hvqmt%3De%26hvtargid%3Dkwd-82052031700674%253Aloc-90%26hydadcr%3D5877_2377383%26keywords%3Dsugar%2Bblood%2Btesting%2Bmachine%26mcid%3Da61959f15cc036d69b4908cfdd3e98e6%26pd_rd_i%3DB07B6LYFV4%26pd_rd_r%3De92bc279-6181-4948-9403-6fdafc6d5b6c%26pd_rd_w%3Dr0Ur5%26pd_rd_wg%3D2LGqs%26pf_rd_p%3Dcd33fa60-47cd-49f3-80b8-24b1f0cbef97%26pf_rd_r%3D8FTMXBAQ5CZZ91SWXF6Q%26qid%3D1746873944%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1");
+            });
+        }
+        var frameContainer1 = document.getElementById("frameContainer1");
+        if (frameContainer1) {
+            frameContainer1.addEventListener("click", function () {
+                window.open("https://www.amazon.in/Dr-Trust-Automatic-Glucometer-Thermometer/dp/B079WYZB6F/ref=sr_1_13?adgrpid=1312818489033728&dib=eyJ2IjoiMSJ9.IqSzLD6o-D4j8qSMn8pG5p9Zg78MBXtCuvRyrWg6wy-xbp3lE4siZn0cZlCi6mzEA3zaBVu3t6ztEMRudGY8AyY7w45gJCmKqnkUzli2ajzyL_3f97TNP8i0g7bSEH7U2-FDy26KIufAmE3HR9T0E6sc-K3DmGlUu5iJOHv4t6BY1VzP6zADaufv6BcH_BKiC4_sECh2x53p7mZAWPB56edq50If7B4StGnS-KSlH3JOlw6UV5EFDXh79pMttG7T2IiruG59p-XlJeq2zAglY6roCKSpal2AMZgGqoLLBOA.sv-FI5cZau2v9IYHlnC06oKhdOM3Dp4__Y593Mp3euQ&dib_tag=se&hvadid=82051421943998&hvbmt=be&hvdev=c&hvlocphy=155020&hvnetw=o&hvqmt=e&hvtargid=kwd-82052031700674%3Aloc-90&hydadcr=5877_2377383&keywords=sugar+blood+testing+machine&mcid=a61959f15cc036d69b4908cfdd3e98e6&qid=1746873944&sr=8-13");
+            });
+        }
+        var frameContainer2 = document.getElementById("frameContainer2");
+        if (frameContainer2) {
+            frameContainer2.addEventListener("click", function () {
+                window.open("https://www.amazon.in/Morepen-Blood-Glucose-Monitor-Strips/dp/B0B4SPBPX8/ref=sr_1_20?adgrpid=1312818489033728&brandId=berry&dib=eyJ2IjoiMSJ9.IqSzLD6o-D4j8qSMn8pG5p9Zg78MBXtCuvRyrWg6wy-xbp3lE4siZn0cZlCi6mzEA3zaBVu3t6ztEMRudGY8AyY7w45gJCmKqnkUzli2ajzyL_3f97TNP8i0g7bSEH7U2-FDy26KIufAmE3HR9T0E6sc-K3DmGlUu5iJOHv4t6BY1VzP6zADaufv6BcH_BKiC4_sECh2x53p7mZAWPB56edq50If7B4StGnS-KSlH3JOlw6UV5EFDXh79pMttG7T2IiruG59p-XlJeq2zAglY6roCKSpal2AMZgGqoLLBOA.sv-FI5cZau2v9IYHlnC06oKhdOM3Dp4__Y593Mp3euQ&dib_tag=se&hvadid=82051421943998&hvbmt=be&hvdev=c&hvlocphy=155020&hvnetw=o&hvqmt=e&hvtargid=kwd-82052031700674%3Aloc-90&hydadcr=5877_2377383&keywords=sugar+blood+testing+machine&mcid=a61959f15cc036d69b4908cfdd3e98e6&qid=1746873944&sr=8-20");
+            });
+        }
+        var frameContainer3 = document.getElementById("frameContainer3");
+        if (frameContainer3) {
+            frameContainer3.addEventListener("click", function () {
+                window.open("https://www.amazon.in/Savlon-Advanced-Sanitizer-Chlorhexidine-Gluconate/dp/B095V6Z5LQ/ref=sr_1_5?crid=FNC349RT7VAI&dib=eyJ2IjoiMSJ9.9Kep_OJ-zemixfW0ENw3aYh2tRAHxaZVq5T67Z-z_eyyuKqDifftyt-66B6EGzfPlZRNhQgA9ygOG2z_Ui38lwJVB46R3epyGf_bqOpnqYWtmT2qCVcHg4njhUgOZHSeR1KuoF8HYuNFZG5s2LW85LI9lQMLPCgNPZpe3BejIS6KeLPoNUGpeZeXNBuKMcFnNgfj-Z5BAPF7-XljSACQqwBC_BPC7OgEVj9-5hMSoNqbVPd7QXX0FYcHhK-Tev1SzuijnzsA3rjxkW6p5z-fOVgXA57xEUEsmlCPG3yHYl4.3_2epRZWjwdh76FToVBJSRijUU9s4HHIyRqtYl-8nJ8&dib_tag=se&keywords=Savlon+sanitizers+hand&qid=1746882043&sprefix=savlonsanitizers+hand+%2Caps%2C285&sr=8-5");
+            });
+        }
+        var frameContainer4 = document.getElementById("frameContainer4");
+        if (frameContainer4) {
+            frameContainer4.addEventListener("click", function () {
+                window.open("https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1NjY1NjMwNzA3Njc5MTk1OjE3NDY4NzU2MTI6c3BfYXRmOjIwMDc1ODI5MDk3MTAyOjowOjo&url=%2FAsgard-Melt-Blown-Fabric-Disposable-Unisex%2Fdp%2FB08B1W5QN5%2Fref%3Dsr_1_1_sspa%3Fcrid%3D2BJ80S8KSSJHP%26dib%3DeyJ2IjoiMSJ9.CTMagr48mcjqhExjhV3sKR_ONkNzk7vvU8Uw7JnZOalpvYsORxEPgjIrc1iIm9egRfFYdoF-KsLUF54SDTVYWFUN5JG8U7dAhb8sIp1PHDZNr0VU0m4SJOl5jd9n-Vo_R8_QIFDPDtwAoAXrxn_wbfWGFntpwKHURFNju5mMW1TK0NiTnX-1f9pIuDstvewKf328qnmJH1R4gE5oZL0PgG1QuZACIV1kneOXF6cvd2X6PanK6Xj8St7KZW5NVkZZpytFP2CP53hAzX4cUKwbK96hEujiT7UIWuoi95zkM.v3Z1Gcv18eZPEEhc_9r1Zpb0ia9EYA7eH4cDlN0zg74%26dib_tag%3Dse%26keywords%3Dmask%26qid%3D1746875612%26sprefix%3Dma%252Caps%252C445%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1");
+            });
+        }
+        var frameContainer5 = document.getElementById("frameContainer5");
+        if (frameContainer5) {
+            frameContainer5.addEventListener("click", function () {
+                window.open("https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo4NDI0OTIwMjQwOTU2NDM1OjE3NDY4NzU3NzI6c3BfYXRmOjMwMDExMzUzMjY4ODAzMjo6MDo6&url=%2FStayfree-Night-Cover-Sanitary-Napkins%2Fdp%2FB07HMVFNLR%2Fref%3Dsr_1_1_f3_0o_fs_sspa%3Fcrid%3D14EM7YJ50CCGF%26dib%3DeyJ2IjoiMSJ9.guyJrDqtVjOaeynypuFgtCZ25q6dlGZUAOVTxlbFldIS89aQ9__Z29wH2Jr7yiraS6UiO-eyKMqOwZ89TfaKct7unJeWXleuQ0-MYbrtnFbJFHpiijO_55xlXUI0U2QPcc8j4NM3WA_LecUZYH6Hiv80mOHfyWv9UVm4jmMMB7fqBbCvdEbhtqaMIxjbIml8bmAJAAzuhbavwwD9BrlCR0f7QEXTl8s2NWdwKsQooS1zZnynPdpanHhF1kaWKzLWIaMAsp4AHr2djpAU8crow5ZjglV-4B7g-6cbY5AAiqs.I0Qkk93zWzOlhflvixNfUGo-uxYAKAJXX4avtQyQLdc%26dib_tag%3Dse%26keywords%3Dpads%26qid%3D1746875772%26sprefix%3Dpads%252Caps%252C304%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1");
+            });
+        }
+    </script>
+
+    
+</body>
+</html>

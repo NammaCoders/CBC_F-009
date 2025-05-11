@@ -1,0 +1,21 @@
+
+
+:root {
+  	
+  	/* Fonts */
+  	--font-segoe-ui: 'Segoe UI';
+  	
+  	/* font sizes */
+  	--font-size-xl: 20px;
+  	--font-size-13xl: 32px;
+  	
+  	/* Colors */
+  	--color-black: #000;
+  	--color-lightseagreen: #1aa192;
+  	--color-white: #fff;
+  	
+  	/* Border radiuses */
+  	--br-lgi: 19px;
+  	--br-8xl: 27px;
+  	--br-85xl:104px;	
+}

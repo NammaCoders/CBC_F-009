@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/static/global3.css" />
+  <link rel="stylesheet" href="/static/index3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@600;700;900&display=swap" />
+   
+  <style>
+       .nav-high {
+            background: #055b5c;
+            color: #ffffff
+             !important;
+            padding: 0px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .nav-high:hover {
+            background: #021313;
+            transform: scale(1.05);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        } 
+        
+    </style>
+
+</head>
+<body>
+
+  <div>
+        <nav>
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Logo" class="logo-image">
+                DiabEase
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/book_your_appointment" class="appointment-highlight">Book Your Test</a></li> -->
+                <li><a href="/products" >Products</a></li>
+                <a href="/consult_doctor" class="nav-high">Consult Doctor</a>
+        </li>
+                <li><a href="/sign_in">Sign In</a></li>
+            </ul>
+        </nav>
+    </div>
+  <div class="book-your-test-now">
+    <h2 class="form-title">FILL YOUR DETAILS</h2>
+    <div class="form-container">
+      <div class="form-fields">
+        <div class="form-group">
+          <label for="F">Full Name</label>
+          <input type="text" id="F" name="Full Name" placeholder="Enter Your Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="E">Email ID</label>
+          <input type="email" id="E" name="Email-ID" placeholder="Enter Your Email ID" required>
+        </div>
+        <div class="form-group">
+          <label for="P">Phone Number</label>
+          <input type="tel" id="P" name="Phone Number" placeholder="Enter Your Phone Number" required>
+        </div>
+        <button class="submit-button">SUBMIT</button>
+      </div>
+      <img class="form-image" src="/static/images/image-removebg-preview (5)[1] 1.png" alt="Doctor Illustration">
+    </div>
+  </div>
+</body>
+</html>

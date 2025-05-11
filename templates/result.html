@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diabetes Risk Result</title>
+    <link rel="stylesheet" href="/static/result.css" />
+  
+  <style>        
+      .appointment-highlight{
+      background: #055b5c;
+      color: #ffffff !important;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+        }
+
+      .appointment-highlight:hover {
+      background: #021313;
+      transform: scale(1.05);
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        }
+      </style>
+
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="logo">
+          <img src="/static/images/logo.png" alt="Logo" class="logo-image" />
+          DiabEase
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/book_your_appointment" class="appointment-highlight"
+              >Book Your Test</a
+            >
+          </li>
+          <li><a href="/products">Products</a></li>
+          <!-- <li><a href="doc.html">Consult Doctor</a></li> -->
+          <li><a href="/sign_in">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h1 class="heading">Your Result</h1>
+    </div>
+
+    <div class="{{ color }}">
+      <h2>{{ result }}</h2>
+    </div>
+
+    <!-- Risk Meter -->
+    <div class="gauge-container">
+      <div class="gauge">
+        <div class="needle" id="needle"></div>
+        <div class="center-circle"></div>
+      </div>
+      <div class="percentage-display">
+        Diabetes Risk: <strong>{{ risk }}%</strong>
+      </div>
+    </div>
+
+    <!-- Suggestions -->
+    <div class="suggestion">
+      <h3>🔥 YOUR PERSONALIZED HEALTH TIPS :</h3>
+      <ul>
+        {% for tip in suggestion %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <a href="/" class="back">Go Back</a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function ()  {
+          const risk = {{ risk }};
+          const needle = document.getElementById('needle');
+          const angle = (risk * 180 / 100) - 90;
+          setTimeout(() => {
+              needle.style.transform = `rotate(${angle}deg)`;
+          }, 500);
+
+          // Animate number count-up
+          const display = document.querySelector('.percentage-display strong');
+          let current = 0;
+          const interval = setInterval(() => {
+              if (current >= risk) {
+                  display.textContent = `${risk.toFixed(2)}%`;
+                  clearInterval(interval);
+              } else {
+                  display.textContent = `${current.toFixed(0)}%`;
+                  current += risk / 40;  // Adjust speed
+              }
+          }, 30);
+      } );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiabEase</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/index.css" />
+    <style>
+      /* Ensure logo image doesn't overflow */
+      .logo-image {
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      .container {
+        padding-top: 120px; /* Push content below fixed nav */
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: rgb(26, 161, 146);
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .did-you-know {
+        background-color: #f9f9f9;
+        border-left: 5px solid #1aa192;
+        padding: 15px;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .did-you-know h3 {
+        color: #044243;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .did-you-know p {
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .did-you-know ul {
+        text-align: left;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/static/images/logo.png" alt="Logo" class="logo-image" />
+        DiabEase
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/book_your_appointment" class="appointment-highlight"
+            >Book Your Test</a
+          >
+        </li>
+        <li><a href="/products">Products</a></li>
+        <li>
+          <a href="/consult_doctor" class="nav-highlight">Consult Doctor</a>
+        </li>
+        <li><a href="/sign_in">Sign In</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1 class="main-heading">Welcome to DiabEase</h1>
+      <h2 class="sub-heading">Your Complete Diabetes Care Companion</h2>
+
+      <form action="/predict" method="POST" class="form1">
+        <div class="form-group">
+          <label for="P">Pregnancies :</label>
+          <input
+            type="number"
+            id="P"
+            name="Pregnancies"
+            placeholder="No. of Pregnancies"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="G">Glucose Level :</label>
+          <input
+            type="number"
+            id="G"
+            name="Glucose"
+            placeholder="Enter Glucose Level"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="B">BMI :</label>
+          <input
+            type="number"
+            step="0.01"
+            id="B"
+            name="BMI"
+            placeholder="Enter BMI"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="A">Age :</label>
+          <input
+            type="number"
+            id="A"
+            name="Age"
+            placeholder="Your Age"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="F">Family History :</label>
+          <select name="DiabetesPedigreeFunction" id="F" required>
+            <option value="0.2">No Family History</option>
+            <option value="0.5">One Parent</option>
+            <option value="0.8">Both Parents</option>
+            <option value="1.0">Whole Family Diabetic</option>
+          </select>
+        </div>
+
+        <button id="sbt" class="button" type="submit">
+          PREDICT NOW
+          <div class="icon-box"></div>
+        </button>
+      </form>
+      <div class="did-you-know">
+        <h3>Did you know</h3>
+        <ul>
+          <li>1 in 10 adults worldwide has diabetes, and nearly half of them are unaware of it.</li>
+          <li>Type 2 diabetes is preventable in many cases with healthy eating and regular exercise.</li>
+          <li>Early symptoms of diabetes include frequent urination, extreme thirst, and unexplained weight loss.</li>
+          <li>Prediabetes often has no symptoms, but lifestyle changes at this stage can stop diabetes from developing.</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="about">
+          <h4>About</h4>
+          <p>
+            A modern tool to predict and manage diabetic health using AI
+            insights.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Predict</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="/sign_in">Sign In</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h4>Contact</h4>
+          <p>Email: support@diabeticpredictor.com</p>
+          <p>Phone: +91-9686494017</p>
+        </div>
+
+        <div class="social">
+          <h4>Follow Us</h4>
+          <a
+            href="https://www.instagram.com/diabease_f009?igsh=NGQxbGhmaGpteXdl"
+            >Instagram</a
+          >
+          |
+          <a href="https://youtu.be/wZAjVQWbMlE?si=j4esQW_LkRH-sGkC">YouTube</a>
+          |
+          <a
+            href="https://www.linkedin.com/in/amogha-k-a-13224632a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+
+      <div class="privacy-assurance">
+        <p>
+          <strong>Privacy Assurance:</strong> All personal and health data
+          entered is kept private, secure, and is never shared with third
+          parties.
+        </p>
+        <p>
+          <strong>Disclaimer:</strong> This tool, including any chatbot
+          responses, is not a substitute for professional medical advice,
+          diagnosis, or treatment. Always consult a qualified healthcare
+          provider for serious health concerns.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://app.dante-ai.com/bubble-embed.js?kb_id=386d496e-8b51-418c-9f5c-431326519ff7&token=62bcc251-056a-415f-9c77-633793c18a27&modeltype=gpt-4-omnimodel-mini&tabs=false"></script>
+  </body>
+</html>

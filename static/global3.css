@@ -1,0 +1,25 @@
+
+body {
+  	margin: 0;
+  	line-height: normal;
+}
+
+
+:root {
+  	
+  	/* Fonts */
+  	--font-segoe-ui: 'Segoe UI';
+  	
+  	/* font sizes */
+  	--font-size-11xl: 30px;
+  	
+  	/* Colors */
+  	--color-black: #000;
+  	--color-gainsboro: #d9d9d9;
+  	--color-lightseagreen: #1aa192;
+  	--color-white: #fff;
+  	
+  	/* Border radiuses */
+  	--br-3xs: 10px;
+  	
+}
